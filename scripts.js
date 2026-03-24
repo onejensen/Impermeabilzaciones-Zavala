@@ -1,4 +1,20 @@
 // Impermeabilizaciones Zavala - Scripts
+// Architectural/Premium redesign — SOZ-25
+
+// ---- IntersectionObserver: fade-in on scroll ----
+(function() {
+  const reveals = document.querySelectorAll('.reveal');
+  if (!reveals.length) return;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(el => observer.observe(el));
+})();
 
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
