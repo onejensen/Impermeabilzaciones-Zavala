@@ -51,10 +51,10 @@
       <h1 class="hero-title">Tu tejado, terraza o fachada<br/><span class="accent">sin filtraciones, garantizado.</span></h1>
       <p class="hero-sub">Empresa local malloquina. Presupuesto gratis con visita en obra. Garantía escrita en cada trabajo. Especialistas en residencial, industrial y hotelero.</p>
       <div class="hero-ctas">
-        <a href="https://wa.me/34600000000?text=Hola%2C%20me%20interesa%20vuestros%20servicios" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+        <a href="https://wa.me/34650589899?text=Hola%2C%20me%20interesa%20vuestros%20servicios" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
           📱 WhatsApp — Presupuesto gratis
         </a>
-        <a href="tel:+34600000000" class="btn btn-outline btn-lg">
+        <a href="tel:+34650589899" class="btn btn-outline btn-lg">
           📞 Llamar ahora
         </a>
       </div>
@@ -247,7 +247,7 @@
         </div>
       </div>
       <div class="cases-cta">
-        <a href="https://wa.me/34600000000?text=Hola%2C%20me%20interesa%20vuestros%20servicios" class="btn btn-primary" target="_blank" rel="noopener">
+        <a href="https://wa.me/34650589899?text=Hola%2C%20me%20interesa%20vuestros%20servicios" class="btn btn-primary" target="_blank" rel="noopener">
           📱 ¿Tienes un caso similar? Escríbenos
         </a>
       </div>
@@ -260,7 +260,7 @@
       <h2 class="reveal">Nuestros Trabajos</h2>
       <span class="galeria-divider"></span>
       <p class="galeria-subtitle reveal reveal-delay-1">Resultados reales de nuestros proyectos de impermeabilización en Mallorca</p>
-      <div class="galeria-grid">
+      <div class="galeria-grid" id="galeria-grid">
         <img src="tejado-impermeabilizado-01.jpg" alt="Tejado impermeabilizado en Mallorca" loading="lazy" />
         <img src="tejado-impermeabilizado-02.jpg" alt="Impermeabilización de tejado" loading="lazy" />
         <img src="terraza-impermeabilizada-01.jpg" alt="Terraza impermeabilizada" loading="lazy" />
@@ -273,6 +273,57 @@
         <img src="trabajo-impermeabilizacion-03.jpg" alt="Proceso de impermeabilización" loading="lazy" />
         <img src="resultado-impermeabilizacion-01.jpg" alt="Resultado impermeabilización Mallorca" loading="lazy" />
         <img src="resultado-impermeabilizacion-02.jpg" alt="Trabajo terminado impermeabilización" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.93);z-index:10000;align-items:center;justify-content:center;cursor:pointer;">
+    <span id="lightbox-close" style="position:absolute;top:20px;right:28px;color:#fff;font-size:2.5rem;cursor:pointer;z-index:10001;font-family:'Cormorant Garamond',serif;line-height:1;">✕</span>
+    <img id="lightbox-img" src="" alt="" style="max-width:90vw;max-height:90vh;object-fit:contain;border:2px solid var(--color-gold);display:block;" />
+  </div>
+
+  <!-- CÓMO TRABAJAMOS -->
+  <section id="proceso" class="proceso-section" style="padding:96px 0;background:var(--color-cream);">
+    <div class="container">
+      <h2 class="reveal" style="text-align:center;margin-bottom:8px;">Cómo trabajamos</h2>
+      <span class="galeria-divider"></span>
+      <p class="reveal reveal-delay-1" style="text-align:center;color:var(--color-text-light);margin-bottom:56px;font-family:var(--font-body);font-size:1rem;">Un proceso claro y sin sorpresas de principio a fin</p>
+      <div class="proceso-steps" style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;">
+        <div class="step reveal reveal-delay-1" style="text-align:center;padding:32px 24px;background:white;border-radius:4px;box-shadow:var(--shadow);">
+          <div class="step-icon" style="font-size:2.5rem;margin-bottom:16px;">📋</div>
+          <h3 style="color:var(--color-blue);margin-bottom:12px;font-size:1.3rem;">1. Visita</h3>
+          <p style="color:var(--color-text-light);font-family:var(--font-body);font-size:0.95rem;line-height:1.6;">Inspeccionamos el estado de su tejado o terraza sin coste.</p>
+        </div>
+        <div class="step reveal reveal-delay-2" style="text-align:center;padding:32px 24px;background:white;border-radius:4px;box-shadow:var(--shadow);">
+          <div class="step-icon" style="font-size:2.5rem;margin-bottom:16px;">💰</div>
+          <h3 style="color:var(--color-blue);margin-bottom:12px;font-size:1.3rem;">2. Presupuesto</h3>
+          <p style="color:var(--color-text-light);font-family:var(--font-body);font-size:0.95rem;line-height:1.6;">Presupuesto detallado y sin sorpresas en 24h.</p>
+        </div>
+        <div class="step reveal reveal-delay-3" style="text-align:center;padding:32px 24px;background:white;border-radius:4px;box-shadow:var(--shadow);">
+          <div class="step-icon" style="font-size:2.5rem;margin-bottom:16px;">🔧</div>
+          <h3 style="color:var(--color-blue);margin-bottom:12px;font-size:1.3rem;">3. Ejecución</h3>
+          <p style="color:var(--color-text-light);font-family:var(--font-body);font-size:0.95rem;line-height:1.6;">Trabajo profesional con materiales de primera calidad.</p>
+        </div>
+        <div class="step reveal reveal-delay-4" style="text-align:center;padding:32px 24px;background:white;border-radius:4px;box-shadow:var(--shadow);">
+          <div class="step-icon" style="font-size:2.5rem;margin-bottom:16px;">✅</div>
+          <h3 style="color:var(--color-blue);margin-bottom:12px;font-size:1.3rem;">4. Garantía</h3>
+          <p style="color:var(--color-text-light);font-family:var(--font-body);font-size:0.95rem;line-height:1.6;">10 años de garantía por escrito en todos nuestros trabajos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BADGE GARANTÍA DESTACADO -->
+  <section style="padding:64px 0;background:var(--color-blue);text-align:center;">
+    <div class="container">
+      <div class="reveal" style="display:inline-flex;align-items:center;gap:24px;background:rgba(255,255,255,0.08);border:2px solid var(--color-gold);border-radius:8px;padding:32px 48px;flex-wrap:wrap;justify-content:center;">
+        <div style="font-size:4rem;line-height:1;">🏆</div>
+        <div style="text-align:left;">
+          <div style="font-family:var(--font-heading);font-size:3rem;font-weight:600;color:var(--color-gold);line-height:1;">10 años</div>
+          <div style="font-family:var(--font-body);font-size:1.1rem;color:rgba(245,240,232,0.85);margin-top:4px;">de garantía por escrito en tejados</div>
+          <div style="font-family:var(--font-body);font-size:0.85rem;color:rgba(245,240,232,0.55);margin-top:4px;">8 años terrazas · 5 años fachadas</div>
+        </div>
       </div>
     </div>
   </section>
@@ -336,7 +387,7 @@
     </div>
   </section>
 
-  <!-- RESEÑAS -->
+  <!-- RESEÑAS / TESTIMONIOS -->
   <section class="section" id="resenas">
     <div class="container">
       <h2 class="section-title">Lo que dicen nuestros clientes</h2>
@@ -372,6 +423,40 @@
             <div>
               <strong>Carlos P.</strong>
               <span>Vivienda particular, Marratxí</span>
+            </div>
+          </div>
+        </div>
+        <!-- 3 testimonios adicionales (Mallorca) -->
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Teníamos filtraciones en el tejado desde hacía años. Zavala vino rápido, presupuestó en el día y en una semana lo tenían resuelto. Sin letra pequeña, tal y como prometieron."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">LG</div>
+            <div>
+              <strong>Laura G.</strong>
+              <span>Vivienda particular, Es Secar de la Real</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Empresa seria y profesional. Impermeabilizaron la terraza de mi comunidad de vecinos. Trabajo limpio, rápido y con garantía escrita. Les volveremos a contratar sin duda."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RS</div>
+            <div>
+              <strong>Rafael S.</strong>
+              <span>Comunidad de vecinos, Son Ferrer</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p>"100% recomendables. Muy atentos desde el primer contacto. El trabajo quedó perfecto y la garantía escrita nos da mucha tranquilidad. Son de los pocos que cumplen lo que dicen."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">MV</div>
+            <div>
+              <strong>Montserrat V.</strong>
+              <span>Chalet, Calvià</span>
             </div>
           </div>
         </div>
@@ -427,18 +512,18 @@
           <h2>Presupuesto gratuito con visita en obra</h2>
           <p>Nos desplazamos a ver el trabajo, evaluamos el estado real y te damos un precio exacto y por escrito. Sin compromiso.</p>
           <div class="contact-channels">
-            <a href="https://wa.me/34600000000?text=Hola%2C%20me%20interesa%20vuestros%20servicios" class="contact-btn whatsapp" target="_blank" rel="noopener">
+            <a href="https://wa.me/34650589899?text=Hola%2C%20me%20interesa%20vuestros%20servicios" class="contact-btn whatsapp" target="_blank" rel="noopener">
               <span class="ch-icon">📱</span>
               <div>
                 <strong>WhatsApp</strong>
                 <span>Respuesta rápida — escríbenos</span>
               </div>
             </a>
-            <a href="tel:+34600000000" class="contact-btn phone">
+            <a href="tel:+34650589899" class="contact-btn phone">
               <span class="ch-icon">📞</span>
               <div>
                 <strong>Teléfono</strong>
-                <span>+34 600 000 000</span>
+                <span>+34 650 589 899</span>
               </div>
             </a>
             <a href="mailto:info@impermeabilizacioneszavala.es" class="contact-btn email">
@@ -458,7 +543,7 @@
           <div class="contact-form" style="text-align:center;padding:2rem;">
             <h3>Solicitar presupuesto</h3>
             <p style="margin-bottom:1.5rem;">La forma más rápida de contactar con nosotros es por WhatsApp. Te respondemos en menos de 2 horas en horario laboral.</p>
-            <a href="https://wa.me/34600000000?text=Hola%2C%20me%20interesa%20vuestros%20servicios" class="btn btn-primary btn-full" target="_blank" rel="noopener" style="display:block;margin-bottom:1rem;">
+            <a href="https://wa.me/34650589899?text=Hola%2C%20me%20interesa%20vuestros%20servicios" class="btn btn-primary btn-full" target="_blank" rel="noopener" style="display:block;margin-bottom:1rem;">
               📱 Enviar solicitud por WhatsApp
             </a>
             <a href="mailto:info@impermeabilizacioneszavala.es" class="btn btn-outline btn-full" style="display:block;">
@@ -499,8 +584,8 @@
       </div>
       <div class="footer-contact">
         <h4>Contacto</h4>
-        <p>📱 <a href="https://wa.me/34600000000?text=Hola%2C%20me%20interesa%20vuestros%20servicios" target="_blank">WhatsApp</a></p>
-        <p>📞 <a href="tel:+34600000000">+34 600 000 000</a></p>
+        <p>📱 <a href="https://wa.me/34650589899?text=Hola%2C%20me%20interesa%20vuestros%20servicios" target="_blank">WhatsApp</a></p>
+        <p>📞 <a href="tel:+34650589899">+34 650 589 899</a></p>
         <p>✉️ <a href="mailto:info@impermeabilizacioneszavala.es">info@impermeabilizacioneszavala.es</a></p>
         <p>📸 <a href="https://www.instagram.com/imper_zavala" target="_blank" rel="noopener">@imper_zavala</a></p>
         <p>🏝️ Palma de Mallorca, Illes Balears</p>
@@ -513,10 +598,61 @@
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP BUTTON -->
-  <a href="https://wa.me/34600000000?text=Hola%2C%20me%20interesa%20vuestros%20servicios" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <!-- FLOATING WHATSAPP BUTTON (desktop) -->
+  <a href="https://wa.me/34650589899?text=Hola%2C%20me%20interesa%20vuestros%20servicios" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" style="display:none;">
     💬
   </a>
+
+  <!-- STICKY MOBILE CTA -->
+  <div id="sticky-cta" style="position:fixed;bottom:0;left:0;right:0;display:flex;z-index:999;background:#122843;">
+    <a href="https://wa.me/34650589899?text=Hola%2C%20me%20interesa%20vuestros%20servicios" target="_blank" rel="noopener" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 8px;background:#1B3A5C;color:#F5F0E8;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:500;text-decoration:none;border-right:1px solid rgba(255,255,255,0.1);">
+      📱 WhatsApp 1
+    </a>
+    <a href="https://wa.me/34670219181?text=Hola%2C%20me%20interesa%20vuestros%20servicios" target="_blank" rel="noopener" style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 8px;background:#C9A84C;color:#122843;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;text-decoration:none;">
+      📱 WhatsApp 2
+    </a>
+  </div>
+
+  <style>
+    @media (min-width: 768px) {
+      #sticky-cta { display: none !important; }
+      .wa-float { display: flex !important; }
+    }
+    @media (max-width: 767px) {
+      body { padding-bottom: 56px; }
+      /* Gallery 1 column on mobile */
+      .galeria-grid {
+        grid-template-columns: 1fr !important;
+        grid-auto-rows: auto !important;
+      }
+      .galeria-grid img {
+        aspect-ratio: 4/3 !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+      .galeria-grid img:nth-child(7n+1),
+      .galeria-grid img:nth-child(7n+4) {
+        grid-column: span 1 !important;
+      }
+      /* Proceso steps: 2 cols on mobile */
+      .proceso-steps {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+      }
+      /* Nav readable */
+      .hero-title { font-size: clamp(2rem, 9vw, 4rem) !important; }
+      .hero-ctas { flex-direction: column; gap: 12px; }
+      .hero-ctas .btn { width: 100%; }
+      /* Reviews grid 1 col */
+      .reviews-grid { grid-template-columns: 1fr !important; }
+      /* Prices grid 1 col */
+      .prices-grid { grid-template-columns: 1fr !important; }
+      /* Cases grid 1 col */
+      .cases-grid { grid-template-columns: 1fr !important; }
+      /* Container padding */
+      .container { padding: 0 16px !important; }
+    }
+  </style>
 
   <script src="scripts.js"></script>
 </body>

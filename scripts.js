@@ -70,3 +70,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// Gallery lightbox
+(function() {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxClose = document.getElementById('lightbox-close');
+  if (!lightbox || !lightboxImg) return;
+
+  const galleryImgs = document.querySelectorAll('#galeria-grid img');
+  galleryImgs.forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  const closeLightbox = () => {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+  };
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+  });
+})();
