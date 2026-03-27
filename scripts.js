@@ -56,7 +56,7 @@ if (contactForm) {
       `Servicio: ${servicio || 'No especificado'}\n` +
       `Detalle: ${mensaje || 'Sin detalle'}`
     );
-    window.open(`https://wa.me/34XXXXXXXXX?text=${text}`, '_blank');
+    window.open(`https://wa.me/34650589899?text=${text}`, '_blank');
   });
 }
 
