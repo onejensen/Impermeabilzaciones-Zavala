@@ -31,6 +31,111 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Structured Data — Schema.org -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://www.imperzavala.com/#business",
+      "name": "Impermeabilizaciones Zavala",
+      "description": "Empresa especializada en impermeabilización de tejados, terrazas y fachadas en Mallorca. Desde 2010. Garantía escrita en cada trabajo.",
+      "url": "https://www.imperzavala.com",
+      "telephone": "+34650589899",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palma de Mallorca",
+        "addressRegion": "Illes Balears",
+        "addressCountry": "ES"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Mallorca"
+      },
+      "foundingDate": "2010",
+      "priceRange": "€€",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34650589899",
+        "contactType": "customer service",
+        "availableLanguage": "Spanish"
+      },
+      "sameAs": ["https://www.instagram.com/imper_zavala"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta impermeabilizar un tejado en Mallorca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El precio varía entre 25€ y 45€/m² según el tipo de tejado y el material aplicado. Ofrecemos presupuesto gratuito con visita en obra sin compromiso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué garantía ofrecéis en los trabajos de impermeabilización?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ofrecemos garantía escrita en cada trabajo. El plazo varía según el sistema aplicado, habitualmente entre 5 y 10 años."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué zonas de Mallorca trabajáis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trabajamos en toda Mallorca: Palma, Alcúdia, Manacor, Llucmajor, Calvià y todos los municipios de la isla."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuándo es necesario impermeabilizar un tejado o terraza?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cuando aparecen manchas de humedad, goteras, burbujas en la pintura o fisuras. También se recomienda revisión preventiva tras más de 10 años sin mantenimiento."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Impermeabilización de tejados en Mallorca",
+      "description": "Impermeabilización de tejados planos e inclinados en Mallorca. Sistemas líquidos, láminas bituminosas y poliuretano. Garantía escrita.",
+      "provider": { "@id": "https://www.imperzavala.com/#business" },
+      "areaServed": { "@type": "Place", "name": "Mallorca" },
+      "serviceType": "Impermeabilización"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Impermeabilización de terrazas y azoteas en Mallorca",
+      "description": "Impermeabilización de terrazas y azoteas en Mallorca. Soluciones definitivas para filtraciones. Presupuesto gratuito.",
+      "provider": { "@id": "https://www.imperzavala.com/#business" },
+      "areaServed": { "@type": "Place", "name": "Mallorca" },
+      "serviceType": "Impermeabilización"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Impermeabilización de fachadas en Mallorca",
+      "description": "Tratamiento impermeabilizante para fachadas y muros en Mallorca. Protección frente a humedad y filtraciones. Empresa local desde 2010.",
+      "provider": { "@id": "https://www.imperzavala.com/#business" },
+      "areaServed": { "@type": "Place", "name": "Mallorca" },
+      "serviceType": "Impermeabilización"
+    }
+  ]
+  </script>
+
 </head>
 <body>
 
